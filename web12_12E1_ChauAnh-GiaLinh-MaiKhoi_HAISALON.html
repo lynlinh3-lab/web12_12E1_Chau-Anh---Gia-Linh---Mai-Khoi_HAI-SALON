@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hải Salon - Salon tóc chuyên nghiệp hàng đầu với đội ngũ stylist giàu kinh nghiệm">
+    <title>Hải Salon - Salon Tóc Chuyên Nghiệp</title>
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-fixed">
+        <nav class="navbar bg-black card" id="main-navbar">
+            <a class="nav-item btn hover-black hide-md hide-lg float-right" onclick="toggleMenu()" title="Toggle Navigation Menu" aria-label="Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="nav-item btn logo-text">HẢI SALON</a>
+            <a href="#about" class="nav-item btn hide-sm"><i class="fa fa-info-circle"></i> Giới Thiệu</a>
+            <a href="#services" class="nav-item btn hide-sm"><i class="fa fa-scissors"></i> Dịch Vụ</a>
+            <a href="#gallery" class="nav-item btn hide-sm"><i class="fa fa-images"></i> Gallery</a>
+            <a href="#team" class="nav-item btn hide-sm"><i class="fa fa-users"></i> Đội Ngũ</a>
+            <a href="#contact" class="nav-item btn hide-sm"><i class="fa fa-envelope"></i> Liên Hệ</a>
+            <a href="#contact" class="nav-item btn hide-sm float-right hover-pink">
+                <i class="fa fa-calendar"></i> Đặt Lịch
+            </a>
+        </nav>
+
+        
+        <nav id="mobile-nav" class="nav-block bg-black hidden hide-lg hide-md">
+            <a href="#about" class="nav-item btn" onclick="toggleMenu()">Giới Thiệu</a>
+            <a href="#services" class="nav-item btn" onclick="toggleMenu()">Dịch Vụ</a>
+            <a href="#gallery" class="nav-item btn" onclick="toggleMenu()">Gallery</a>
+            <a href="#team" class="nav-item btn" onclick="toggleMenu()">Đội Ngũ</a>
+            <a href="#contact" class="nav-item btn" onclick="toggleMenu()">Liên Hệ</a>
+        </nav>
+    </header>
+
+  
+    <main>
+       
+        <section class="bgimg-1 display-container opacity-min" id="home">
+            <div class="display-middle" style="white-space:nowrap;">
+                <span class="text-center padding-lg bg-black text-xl text-wide animate-fade hero-title">
+                    HẢI <span class="hide-sm">SALON</span>
+                </span>
+            </div>
+            <div class="display-bottom padding-lg">
+                <p class="text-lg text-white text-center tagline">"Xì tai mới nhất - Cắt tóc đổi đời "</p>
+            </div>
+        </section>
+
+     
+        <section class="container padding-64" id="about">
+            <article class="content">
+                <h2 class="text-center section-title">VỀ CHÚNG TÔI</h2>
+                <p class="text-center text-lg subtitle">Nơi tôn vinh nhân cách của bạn</p>
+                
+                <div class="row padding-32">
+                    <div class="col col-half padding-lg">
+                        <img src="./assets/overall.jpg" class="rounded img-responsive hover-no-opacity" alt="Không gian Hải Salon">
+                    </div>
+                    <div class="col col-half padding-lg">
+                        <h3 class="text-center">Chào mừng đến với Hải Salon</h3>
+                        <p class="text-lg">
+                            <strong>Hải Salon</strong> được thành lập với tâm huyết mang đến cho khách hàng những trải nghiệm làm đẹp tuyệt vời nhất. 
+                            Với đội ngũ stylist được "đào tạo bài bản" và không ngừng cập nhật xu hướng mới nhất.
+                        </p>
+                        <p class="text-lg">
+                            Chúng tôi cam kết sử dụng các sản phẩm chất lượng thấp, không an toàn cho tóc và da đầu. 
+                            Không gian salon hiện đại, thoải mái sẽ giúp bạn thư giãn trong suốt quá trình làm đẹp.
+                        </p>
+                        <p class="text-lg text-grey">
+                            <i class="fa fa-quote-left text-pink"></i>
+                            Mỗi mái tóc là một tác phẩm nghệ thuật, và chúng tôi là những chú hề ma quái.
+                            <i class="fa fa-quote-right text-pink"></i>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+       
+        <section class="bgimg-2 display-container opacity-min">
+            <div class="display-middle">
+                <span class="text-xxl text-white text-wide promo-text">NGHIỆP DƯ - FREESTYLE</span>
+            </div>
+        </section>
+
+       
+        <section class="container padding-64" id="services">
+            <article class="content">
+                <h2 class="text-center section-title">DỊCH VỤ CỦA CHÚNG TÔI</h2>
+                <p class="text-center text-lg subtitle">Đa dạng dịch vụ làm đẹp cho mái tóc</p>
+
+                <div class="row-padding text-center" style="margin-top:32px">
+                
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card">
+                            <div class="service-icon">
+                                <i class="fa fa-scissors fa-3x margin-top text-pink"></i>
+                            </div>
+                            <h4>Cắt Tóc</h4>
+                            <p class="opacity">Cắt tóc theo phong cách hiện đại, phù hợp khuôn mặt</p>
+                            <h5 class="text-pink">Từ 100.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Cắt tóc nam/nữ/LGBTQI+</li>
+                                <li>Không cắt tóc trẻ em</li>
+                                <li>Tư vấn kiểu tóc CÓ phí</li>
+                            </ul>
+                        </div>
+                    </div>
+
+               
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card featured">
+                            <div class="service-icon">
+                                <i class="fa fa-palette fa-3x margin-top text-white"></i>
+                            </div>
+                            <h4>Nhuộm Tóc</h4>
+                            <p class="opacity">Nhuộm màu đi trước thời trang, an toàn (?) cho tóc</p>
+                            <h5>Từ 300.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Nhuộm màu trước thời trang</li>
+                                <li>Nhuộm highlight/lowlight</li>
+                                <li>Nhuộm phủ "đời"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card">
+                            <div class="service-icon">
+                                <i class="fa fa-spray-can fa-3x margin-top text-pink"></i>
+                            </div>
+                            <h4>Uốn & Duỗi</h4>
+                            <p class="opacity">Uốn xoăn giả như Merinda</p>
+                            <h5 class="text-pink">Từ 400.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Uốn setting/uốn nóng</li>
+                                <li>Duỗi ngược Nhật Bản</li>
+                                <li>Hư tổn tóc phục hồi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="row-padding text-center">
+                 
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card">
+                            <div class="service-icon">
+                                <i class="fa fa-spa fa-3x margin-top text-pink"></i>
+                            </div>
+                            <h4>Chăm Sóc Tóc</h4>
+                            <p class="opacity">Hư tổn và phá tóc chuyên sâu</p>
+                            <h5 class="text-pink">Từ 200.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Hấp dầu Diesel dưỡng tóc</li>
+                                <li>Ủ tóc Sulfric acid</li>
+                                <li>Hemoglobin phục hồi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card">
+                            <div class="service-icon">
+                                <i class="fa fa-wand-magic-sparkles fa-3x margin-top text-pink"></i>
+                            </div>
+                            <h4>Tạo Kiểu</h4>
+                            <p class="opacity">Tạo kiểu cho các dịp đặc biệt</p>
+                            <h5 class="text-pink">Từ 150.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Tóc Bạch Liên Hoa</li>
+                                <li>Tóc Liễu Như Yên</li>
+                                <li>Tóc Tai Quay Cuồng</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                 
+                    <div class="col-third margin-bottom">
+                        <div class="card container service-card">
+                            <div class="service-icon">
+                                <i class="fa fa-shower fa-3x margin-top text-pink"></i>
+                            </div>
+                            <h4>Gội Đầu</h4>
+                            <p class="opacity">Massage thư giãn, sảng khoái</p>
+                            <h5 class="text-pink">Từ 50.000.000đ</h5>
+                            <ul class="list text-left">
+                                <li>Gội đầu thoát sinh</li>
+                                <li>Massage đầu vai gáy</li>
+                                <li>Trị liệu da đầu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+       
+        <section class="bgimg-3 display-container opacity-min">
+            <div class="display-middle">
+                <span class="text-xxl text-white text-wide promo-text">LÀM ĐẸP LÀ NGHỆ THUẬT</span>
+            </div>
+        </section>
+
+        
+        <section class="container padding-64 bg-light-grey" id="gallery">
+            <article class="content">
+                <h2 class="text-center section-title">GALLERY</h2>
+                <p class="text-center text-lg subtitle">Những tác phẩm nổi bật của chúng tôi</p>
+
+                <div class="row-padding" style="margin-top:32px">
+                    <div class="col col-quarter margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/1.jpeg" alt="Kiểu tóc 1" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Tóc dài hơi xoăn</strong></p>
+                                <p class="opacity">Layer dài với đuôi được uốn lơi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-quarter margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/2.jpeg" alt="Kiểu tóc 2" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Tóc ngắn siêu thẳng</strong></p>
+                                <p class="opacity">Layer ngắn và được duỗi thẳng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-quarter margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/3.jpeg" alt="Kiểu tóc 3" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Ngắn vừa thẳng chưa?</strong></p>
+                                <p class="opacity">Đơn giản chỉ là chiều dài đến giữa lưng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-quarter margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/minh anh.jpeg" alt="Kiểu tóc 4" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Siêu dài siêu xoăn</strong></p>
+                                <p class="opacity">Tóc dài đến bàn tọa với độ xoăn 2c</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="row-padding">
+                    <div class="col col-half margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/interior.jpg" alt="Không gian salon" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Không Gian Hiện Đại</strong></p>
+                                <p class="opacity">Thoải mái và sang trọng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-half margin-bottom">
+                        <div class="card gallery-item">
+                            <img src="./assets/hair salon.jpg" alt="Khu vực gội đầu" class="hover-opacity">
+                            <div class="container bg-white">
+                                <p><strong>Khu Vực Gội Đầu</strong></p>
+                                <p class="opacity">Thư giãn tuyệt đối</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+      
+        <section class="container padding-64" id="team">
+            <article class="content">
+                <h2 class="text-center section-title">ĐỘI NGŨ STYLIST</h2>
+                <p class="text-center text-lg subtitle">Những "nghệ nhân tài năng" của chúng tôi</p>
+
+                <div class="row-padding text-center" style="margin-top:32px">
+                
+                    <div class="col-third margin-bottom">
+                        <div class="card team-card">
+                            <img src="./assets/1.1.png" alt="Stylist Hải" class="circle team-avatar">
+                            <div class="container">
+                                <h4>Nguyễn Châu Anh</h4>
+                                <p class="opacity">Founder, CEO & Social Media Manager</p>
+                                <p>17 năm kinh nghiệm trong việc đi kiểm định tiệm tóc. Chuyên gia về phát triển và đào tạo học viên (về media và bonding)</p>
+                                <div class="social-icons">
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div class="col-third margin-bottom">
+                        <div class="card team-card">
+                            <img src="./assets/2.1.png" alt="Stylist Linh" class="circle team-avatar">
+                            <div class="container">
+                                <h4>Vũ Dương Gia Linh</h4>
+                                <p class="opacity">CFO</p>
+                                <p>17 năm kinh nghiệm quản lý tài chính và chi tiêu tại gia, điều phối chi tiêu và các kế hoạch đầu tư ở các tổ chức về giáo dục</p>
+                                <div class="social-icons">
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-third margin-bottom">
+                        <div class="card team-card">
+                            <img src="./assets/3.1.png" alt="Stylist Mai" class="circle team-avatar">
+                            <div class="container">
+                                <h4>Nguyễn Phạm Mai Khôi</h4>
+                                <p class="opacity">Investor, VVIP Member</p>
+                                <p>17 năm kinh nghiệm về trải nghiệm các mẫu tóc và đầu tư và cung cấp địa điểm kinh doanh</p>
+                                <div class="social-icons">
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn rounded-lg bg-pink"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        
+        <section class="container padding-64 bg-light-grey" id="contact">
+            <article class="content">
+                <h2 class="text-center section-title">LIÊN HỆ & ĐẶT LỊCH</h2>
+                <p class="text-center text-lg subtitle">Đặt lịch ngay để trải nghiệm dịch vụ tuyệt vời</p>
+
+                <div class="row padding-32">
+                   
+                    <div class="col col-5 padding-lg">
+                        <div class="contact-info">
+                            <h4><i class="fa fa-map-marker-alt text-pink"></i> Địa chỉ</h4>
+                            <p>Grandview C, Phạm Thiều, Khu đô thị Phú Mỹ Hưng, Quận 7<br>TP. Hồ Chí Minh, Việt Nam</p>
+
+                            <h4><i class="fa fa-phone text-pink"></i> Điện thoại</h4>
+                            <p>Hotline: 0909 251 224<br>Tel: (028) 317 411 312</p>
+
+                            <h4><i class="fa fa-envelope text-pink"></i> Email</h4>
+                            <p>contact@hairsalon.vn</p>
+
+                            <h4><i class="fa fa-clock text-pink"></i> Giờ mở cửa</h4>
+                            <p>Thứ 2 - Thứ 6: 9:00 - 17:00<br>Thứ 7 - Chủ nhật: nghỉ</p>
+
+                            <div class="social-links margin-top">
+                                <a href="#" class="btn bg-pink rounded-lg"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn bg-pink rounded-lg"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn bg-pink rounded-lg"><i class="fab fa-tiktok"></i></a>
+                                <a href="#" class="btn bg-pink rounded-lg"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col col-7 padding-lg">
+                        <form action="#" method="post" class="booking-form" id="booking-form">
+                            <div class="row-padding">
+                                <div class="col col-half">
+                                    <label for="name">Họ và tên *</label>
+                                    <input class="input border" type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+                                </div>
+                                <div class="col col-half">
+                                    <label for="phone">Số điện thoại *</label>
+                                    <input class="input border" type="tel" id="phone" name="phone" placeholder="0909 xxx xxx" required>
+                                </div>
+                            </div>
+
+                            <div class="row-padding">
+                                <div class="col col-half">
+                                    <label for="email">Email</label>
+                                    <input class="input border" type="email" id="email" name="email" placeholder="email@example.com">
+                                </div>
+                                <div class="col col-half">
+                                    <label for="service">Dịch vụ *</label>
+                                    <select class="select border" id="service" name="service" required>
+                                        <option value="">-- Chọn dịch vụ --</option>
+                                        <option value="cat-toc">Cắt tóc</option>
+                                        <option value="nhuom-toc">Nhuộm tóc</option>
+                                        <option value="uon-toc">Uốn tóc</option>
+                                        <option value="duoi-toc">Duỗi tóc</option>
+                                        <option value="cham-soc">Chăm sóc tóc</option>
+                                        <option value="tao-kieu">Tạo kiểu</option>
+                                        <option value="goi-dau">Gội đầu thư giãn</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row-padding">
+                                <div class="col col-half">
+                                    <label for="date">Ngày hẹn *</label>
+                                    <input class="input border" type="date" id="date" name="date" required>
+                                </div>
+                                <div class="col col-half">
+                                    <label for="time">Giờ hẹn *</label>
+                                    <select class="select border" id="time" name="time" required>
+                                        <option value="">-- Chọn giờ --</option>
+                                        <option value="09:00">09:00</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row-padding">
+                                <div class="col col-full">
+                                    <label for="message">Ghi chú</label>
+                                    <textarea class="input border" id="message" name="message" rows="3" placeholder="Yêu cầu đặc biệt hoặc ghi chú thêm..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row-padding">
+                                <div class="col col-full">
+                                    <button class="btn bg-black section-margin float-right" type="submit">
+                                        <i class="fa fa-calendar-check"></i> ĐẶT LỊCH NGAY
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            
+    <footer class="text-center bg-black padding-64">
+        <a href="#home" class="btn bg-light-grey rounded-lg">
+            <i class="fa fa-arrow-up margin-right"></i>Về đầu trang
+        </a>
+        <div class="container margin-top">
+            <a href="#" class="btn rounded-lg hover-pink"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn rounded-lg hover-pink"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn rounded-lg hover-pink"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="btn rounded-lg hover-pink"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="text-md margin-top">
+            &copy; 2024 <strong>Hải Salon</strong> - Tất cả quyền được bảo lưu
+        </p>
+        <p class="text-sm opacity">
+            Thiết kế với <i class="fa fa-heart text-pink"></i> bởi Hải Salon Team
+        </p>
+    </footer>
+
+ 
+</body>
+</html>
